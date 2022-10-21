@@ -21,10 +21,11 @@ body {
 }
 
 #cs-section {
-    background: url('./images/logo-net.png'), url('./images/connections.png');
-    background-size: contain;
+    background: url("./images/logo-net.png"), url("./images/connections.png");
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
+    background-size: contain;
+    opacity: 0;
 }
 
 .content-wrapper {
@@ -101,4 +102,26 @@ body {
     height: 30%;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
+}
+
+@keyframes render-background {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
