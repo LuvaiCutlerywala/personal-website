@@ -26,7 +26,7 @@ function csSectionRender(entries, observer) {
 }
 
 //On load, the intersection observers should be assigned to each component that has one.
-window.addEventListener("load", (event) => {
+window.addEventListener("load", () => {
     assignRenderers();
 });
 
