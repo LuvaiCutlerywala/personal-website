@@ -7,6 +7,11 @@
     </head>
 
     <body>
+        <div id="sidebar" class="sidebar">
+            <button id="theme-change" class="sidebar-item" onclick="changeTheme();">
+                <ion-icon name="contrast" size="large"></ion-icon>
+            </button>
+        </div>
         <div id="main-content" class="content-wrapper">
             <div id="intro-section" class="section">
                 <div id="title-widget" class="widget header-widgets">
@@ -20,9 +25,7 @@
             </div>
             <div id="physics-section" class="section">
                 <div id="physics-asset-wrapper" class="asset-wrapper">
-                    <a href="http://wavefunction.danielsvane.dk/" target="_blank">
-                        <img src="./images/hydrogen-wave-functions.png" id="physics-descriptor-asset" class="descriptor-asset" title="Simulate the hydrogen atom for yourself!">
-                    </a>
+                    <img src="./images/hydrogen-wave-functions.png" id="physics-descriptor-asset" class="descriptor-asset" title="Simulate the hydrogen atom for yourself!">
                 </div>
                 <div id="physics-blurb-widget" class="widget descriptor-widgets">
                     <p>This is a simple blurb.</p>
@@ -34,6 +37,9 @@
         <div id="contact-content" class="content-wrapper">
 
         </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 
 </html>

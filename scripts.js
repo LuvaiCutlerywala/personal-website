@@ -1,3 +1,22 @@
+let theme = "dark";
+
+function changeTheme(){
+    let body = document.querySelector("body");
+    let sidebar = document.querySelector("#sidebar");
+
+    if(theme === 'dark'){
+        body.style.backgroundImage = 'radial-gradient(#d8dee9, #e5e9f0)';
+        sidebar.style.backgroundColor = "#eceff4";
+        console.log("Switching to light theme");
+        theme = 'light';
+    } else {
+        body.style.backgroundImage = 'radial-gradient(#434c5e, #4c566a)';
+        sidebar.style.backgroundColor = 'black';
+        console.log("Switching to dark theme");
+        theme = 'dark'; 
+    }
+}
+
 function assignRenderers(){
 
     //Elements with renderers attached:
@@ -28,5 +47,6 @@ function csSectionRender(entries, observer) {
 //On load, the intersection observers should be assigned to each component that has one.
 window.addEventListener("load", () => {
     assignRenderers();
+    
 });
 
